@@ -1,0 +1,30 @@
+{
+  "name": "my_website",
+  "version": "1.0.0",
+  "description": "Server hosting the landing page for my applications",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PWTaberg/landingproj.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PWTaberg/landingproj/issues"
+  },
+  "homepage": "https://github.com/PWTaberg/landingproj#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-validator": "^6.5.0",
+    "i": "^0.3.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
