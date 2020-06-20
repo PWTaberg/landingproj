@@ -126,5 +126,5 @@ audio.addEventListener('ended', nextSong);
 // Return to front page
 backBtn.addEventListener('click', () => {
   console.log('redirect');
-  window.location = '../index.html';
+  window.location = '../../index.html';
 });
