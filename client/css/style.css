@@ -137,6 +137,10 @@ button:focus {
   display: block;
 }
 
+.modal-container.show-voice-video-modal {
+  display: block;
+}
+
 .modal {
   background-color: #fff;
   border-radius: 5px;

@@ -3,9 +3,15 @@ const close = document.getElementById('close');
 const open = document.getElementById('open');
 const modal = document.getElementById('modal');
 
+// games modal
 const gamesClose = document.getElementById('games-close');
 const gamesOpen = document.getElementById('games-open');
 const gamesModal = document.getElementById('games-modal');
+
+// voice video modal
+const voiceVideoClose = document.getElementById('voice-video-close');
+const voiceVideoOpen = document.getElementById('voice-video-open');
+const voiceVideoModal = document.getElementById('voice-video-modal');
 
 // Toggle nav
 toggle.addEventListener('click', () =>
@@ -18,12 +24,20 @@ open.addEventListener('click', () => modal.classList.add('show-modal'));
 gamesOpen.addEventListener('click', () =>
   gamesModal.classList.add('show-games-modal')
 );
+// Show voice-video-modal
+voiceVideoOpen.addEventListener('click', () =>
+  voiceVideoModal.classList.add('show-voice-video-modal')
+);
 
 // Hide modal
 close.addEventListener('click', () => modal.classList.remove('show-modal'));
 // Hide games-modal
 gamesClose.addEventListener('click', () =>
   gamesModal.classList.remove('show-games-modal')
+);
+// Hide voice-video-modal
+voiceVideoClose.addEventListener('click', () =>
+  voiceVideoModal.classList.remove('show-voice-video-modal')
 );
 
 // Hide modal on outside click
@@ -38,18 +52,12 @@ window.addEventListener('click', (e) => {
   if (e.target === gamesModal) {
     gamesModal.classList.remove('show-games-modal');
   }
+
+  // games-modal
+  if (e.target === voiceVideoModal) {
+    voiceVideoModal.classList.remove('show-voice-video-modal');
+  }
   /*
   e.target == modal ? modal.classList.remove('show-modal') : false;
   */
 });
-
-getDeliveryDate = (days) => {
-  let today = new Date();
-  let temp = today.setDate(today.getDate() + days);
-  let deliveryDay = new Date(temp).toLocaleDateString();
-  return deliveryDay;
-};
-
-console.log(`Levereras senast ${getDeliveryDate(days)}`);
-
-//`Levereras senast ${getDeliveryDate()}`
