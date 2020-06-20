@@ -172,6 +172,10 @@ button:focus {
   margin: 0;
   padding: 0;
 }
+
+.modal-content li {
+  margin: 10px;
+}
 .modal-content a {
   text-decoration: none;
   color: var(--secondary-color);
