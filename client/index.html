@@ -2,14 +2,132 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Landing page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/901297bff2.js"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>PW Taberg</title>
 </head>
 
 <body>
-  <h1>Hello my World</h1>
+  <nav>
+    <div class="logo">
+      <img src="./img/pw.jpg" alt="user" />
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Full stack projects</a></li>
+      <li><a href="#" id="open">Apps</a></li>
+      <li><a href="#" id="games-open">Games</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <header>
+    <button id="toggle" class="toggle">
+      <i class="fa fa-bars fa-2x"></i>
+    </button>
+    <h1>Peters Page</h1>
+    <p>Here are some frontend and backend projects that I have been working on for fun.</p>
 
+    <button class="cta-btn" id="lopen">Sign Up</button>
+  </header>
+  <div class="container">
+    <h2>What is this landing page about ?</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam non molestias nesciunt, vero voluptate tenetur
+      voluptatibus facilis, voluptas tempora mollitia sequi voluptates pariatur repellat delectus hic. Deserunt
+      aspernatur repudiandae consequatur?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, minima.</p>
+    <h2>Tell me more</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat blanditiis, suscipit ad, culpa reprehenderit,
+      accusamus asperiores cupiditate molestiae amet magni corporis natus adipisci ratione nam fuga deleniti.
+      Voluptatibus unde hic dolore amet quis itaque, corporis vel perspiciatis qui. Accusamus, et!</p>
+    <h2>Benifits</h2>
+    <ul>
+      <li>Lifetime Access</li>
+      <li>20 Day Money Back</li>
+      <li>Tailored Customer Support</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dignissimos doloremque, quae praesentium totam,
+      impedit expedita ratione facere temporibus aliquid quos rem labore autem adipisci exercitationem magni reiciendis
+      ea atque ut quibusdam nam maxime velit laborum. Laborum impedit aut pariatur ipsa, tempora voluptates ut similique
+      magnam distinctio tempore odio delectus officiis ad doloribus error molestias accusamus ipsum voluptatibus
+      mollitia at vel quis in. Eos aliquam blanditiis, cum quas quibusdam magni?</p>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal-container" id="modal">
+    <div class="modal">
+      <button class="close-btn" id="close">
+        <i class="fa fa-times"></i>
+      </button>
+      <div class="modal-header">
+        <h3>Sign Up</h3>
+      </div>
+      <div class="modal-content">
+        <p>Register with us to get offers, support and more</p>
+        <form class="modal-form">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter Name" class="form-input" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Email" class="form-input" />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter Password" class="form-input" />
+          </div>
+          <div>
+            <label for="password2">Confirm Password</label>
+            <input type="password" id="password2" placeholder="Confirm Password" class="form-input" />
+          </div>
+          <input type="submit" value="Submit" class="submit-btn" />
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Games Modal -->
+  <div class="modal-container" id="games-modal">
+    <div class="modal">
+      <button class="close-btn" id="games-close">
+        <i class="fa fa-times"></i>
+      </button>
+      <div class="modal-header">
+        <h3>Games</h3>
+      </div>
+      <div class="modal-content">
+        <ul>
+          <li>
+            The <a href="./games/breakout.html">Breakout</a> game explores different Canvas functions for drawing and
+            moving figures on the screen.
+          </li>
+        </ul>
+        <p>The Breakout game explores different Canvas functions for drawing and moving figures on the screen.</p>
+        <form class="modal-form">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter Name" class="form-input" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Email" class="form-input" />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter Password" class="form-input" />
+          </div>
+          <div>
+            <label for="password2">Confirm Password</label>
+            <input type="password" id="password2" placeholder="Confirm Password" class="form-input" />
+          </div>
+          <input type="submit" value="Submit" class="submit-btn" />
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
