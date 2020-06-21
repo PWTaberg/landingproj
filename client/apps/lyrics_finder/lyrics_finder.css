@@ -56,7 +56,7 @@ header h1 {
 form {
   position:relative;
   width: 500px;
-  max-width; 100%
+  max-width: 100%
 }
 
 form input {

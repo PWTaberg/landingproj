@@ -145,6 +145,10 @@ button:focus {
   display: block;
 }
 
+.modal-container.show-components-modal {
+  display: block;
+}
+
 .modal {
   background-color: #fff;
   border-radius: 5px;
