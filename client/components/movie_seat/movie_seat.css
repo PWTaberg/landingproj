@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-/*  #242333;*/
 body {
   background-color: #242333;
   color: #fff;
@@ -13,7 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  font-family: lato;
+  font-family: Lato;
   margin: 0;
 }
 
@@ -28,9 +27,9 @@ body {
   font-size: 14px;
   margin-left: 10px;
   padding: 5x 15x 5x 15x;
-  -moz-appearance:none;
-  -webkit-appearance;
   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .seat {
